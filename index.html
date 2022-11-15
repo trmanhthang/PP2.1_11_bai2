@@ -11,11 +11,17 @@
 </body>
 
 <script>
-    let i = +prompt('Nhập nhiệt độ (C)')
-    if(i > 100) {
-        alert('Hãy giảm nhiệt độ');
-    } else if(i < 20) {
-        alert('Hãy tăng nhiệt độ');
-    }
+    let i;
+
+    do {
+        i = +prompt('Nhập nhiệt độ (C)')
+        if(i > 100) {
+            alert('Hãy giảm nhiệt độ');
+        } else if(i < 20) {
+            alert('Hãy tăng nhiệt độ');
+        } else {
+            alert('Nhiệt độ bình thường')
+        }
+    } while (i > 100 || i < 20)
 </script>
 </html>
